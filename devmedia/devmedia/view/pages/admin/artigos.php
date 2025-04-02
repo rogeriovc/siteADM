@@ -35,8 +35,8 @@
                     <?php foreach ($lista as $item) { ?>
                     <tr>
                         <td><?= $item['id'] ?></td>
-                        <td><?= $item['categoria_id'] ?></td>
-                        <td><?= $item['titulo'] ?></td>
+                        <td><?= $item['idcategoria'] ?></td>
+                        <td><?= $item['conteudo'] ?></td>
                         <td class="table-actions">
                             <a
                                 href="<?= APP_CONSTANTS['APP_URL'] . APP_CONSTANTS['PATH_PAGES'] . 'admin/artigo.php?id=' . $item['id'] ?>">

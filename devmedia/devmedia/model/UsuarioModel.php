@@ -139,4 +139,25 @@ class UsuarioModel {
         return NULL;
     }
 
+    public function criar($nome) {
+        $query = "INSERT INTO $this->usuario (nome) VALUES (:nome);";
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':nome', $nome);
+        $stmt->execute();
+
+        return $stmt->rowCount() > 0;
+    }
+
+    public function editar($usuario) {
+        $query = "UPDATE $this->usuarios SET nome = :nome WHERE id = :id;";
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":id", $usuario["id"]);
+        $stmt->bindParam(":nome", $usuario["nome"]);
+        $stmt->execute();
+
+        return $stmt->rowCount() > 0;
+    }
+
 }

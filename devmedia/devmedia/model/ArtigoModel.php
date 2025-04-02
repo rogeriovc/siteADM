@@ -5,7 +5,7 @@ require_once __DIR__ . '/CategoriaModel.php';
 class ArtigoModel {
 
     private $categoriaModel;
-    private $tabela = "artigo";
+    private $tabela = "artigos";
     private $conn;
 
     public function __construct() {

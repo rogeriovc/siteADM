@@ -25,7 +25,7 @@
             }
 
             &:hover {
-                filter: brightness(40%); /* esse aqui prejudica quando seleciona o texto */
+                filter: brightness(60%); /* esse aqui prejudica quando seleciona o texto */
             }
         }
     }
@@ -33,6 +33,7 @@
     td {
         padding: .5rem;
         vertical-align: middle;
+        color:gray
     }
 }
 

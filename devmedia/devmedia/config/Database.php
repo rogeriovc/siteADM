@@ -6,7 +6,7 @@ class Database {
     private $port = "3306";
     private $username = "root";
     private $password = "";
-    private $dbName = "devmedia_db";
+    private $dbName = "devmedia";
 
     public function conectar() {
         $connUrl = "mysql:host=$this->host;port=$this->port;dbname=$this->dbName;charset=utf8mb4";

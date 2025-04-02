@@ -11,10 +11,12 @@
         $modo = 'CRIACAO';
         $usuario = [
             'id'=> '',
-            'email'=> '',
             'nome'=> '',
+            'email'=> '',
+            'dtnascimento'=> '',
             'cpf'=> '',
-            'dataNascimento'=> '',
+            'telefone'=>'',
+            
         ];
     }
 
@@ -45,8 +47,8 @@
                     </div>
 
                     <div class="input-group">
-                        <label for="dataNascimento">Data de nascimento</label>
-                        <input name="dataNascimento" type="date" value="<?= $usuario['dataNascimento'] ?>">
+                        <label for="dtascimento">Data de nascimento</label>
+                        <input name="dtnascimento" type="date" value="<?= $usuario['dtnascimento'] ?>">
                     </div>
 
                     <div class="input-group">

@@ -15,9 +15,8 @@
         $modo = 'CRIACAO';
         $artigo = [
             'id'=> '',
-            'titulo'=> '',
             'conteudo'=> '',
-            'categoriaId'=> '',
+            'idcategoria'=> '',
         ];
     }
 
@@ -38,21 +37,16 @@
                     <input name="id" type="hidden" value="<?= $artigo['id'] ?>">
 
                     <div class="input-group">
-                        <label for="categoriaId">Categoria</label>
-                        <select name="categoriaId" required>
+                        <label for="idcategoria">Categoria</label>
+                        <select name="idcategoria" required>
                             <option value=""></option>
                             <?php foreach ($categorias as $categoria) { ?>
                             <option value="<?= $categoria['id'] ?>"
-                                <?= $artigo['categoriaId'] == $categoria['id'] ? 'selected' : '' ?>>
+                                <?= $artigo['idcategoria'] == $categoria['id'] ? 'selected' : '' ?>>
                                 <?= $categoria['nome'] ?>
                             </option>
                             <?php } ?>
                         </select>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="titulo">Título</label>
-                        <input name="titulo" type="text" value="<?= $artigo['titulo'] ?>" required>
                     </div>
 
                     <div class="input-group">

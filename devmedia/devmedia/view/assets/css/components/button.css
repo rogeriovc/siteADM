@@ -32,7 +32,7 @@
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
+    background-color: black;
     color: var(--text-white);
 
     &:hover {

@@ -4,7 +4,7 @@
     grid-column: 1;
     grid-row: 1 / 4;
 
-    background-color: var(--color-primary);
+    background-color: black;
     z-index: 10;
     /* sombreamento na lateral direita */
     box-shadow: 
@@ -38,7 +38,7 @@
                     color: var(--text-white);
 
                     &.active {
-                        background-color: var(--color-primary-darken);
+                        background-color: blue;
                     }
                 }
             }

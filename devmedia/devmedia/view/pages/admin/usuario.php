@@ -32,7 +32,7 @@
         <h3>Usuários >> <?= $modo == 'EDICAO' ? 'Editar ' . $usuario['id'] : 'Criar' ?></h3>
 
         <div class="container">
-            <form class="form" method="POST" action="">
+            <form class="form" method="POST" action="<?= APP_CONSTANTS['APP_URL'] . APP_CONSTANTS['PATH_PAGES'] . 'admin/usuario_salvar.php' ?>">
                 <div class="form-content">
                     <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
 
@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="input-group">
-                        <label for="dtascimento">Data de nascimento</label>
+                        <label for="dtnascimento">Data de nascimento</label>
                         <input name="dtnascimento" type="date" value="<?= $usuario['dtnascimento'] ?>">
                     </div>
 

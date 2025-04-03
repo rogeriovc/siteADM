@@ -44,10 +44,13 @@
                                 </span>
                             </a>
                             <form method="POST"
-                                action="<?= APP_CONSTANTS['APP_URL'] . APP_CONSTANTS['PATH_PAGES'] . 'admin/usuario.php?id=' . $item['id'] ?>">
+                                action="<?= APP_CONSTANTS['APP_URL'] . APP_CONSTANTS['PATH_PAGES'] . 'admin/usuario_excluir.php' ?>">
+                                <input type="hidden" name="id" value="<?= $item['id'] ?>" >
+                                <button>
                                 <span class="btn-icon material-symbols-outlined" title="Excluir">
                                     delete
                                 </span>
+                                </button>
                             </form>
                         </td>
                     </tr>
